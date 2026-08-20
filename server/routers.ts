@@ -2,13 +2,14 @@ import { TRPCError } from "@trpc/server";
 import { z } from "zod";
 
 import { connectorCatalog, getConnectorDefinition } from "../shared/connectors";
+import { oauthProviderConfiguration, pkcePolicy, resolveProviderConfiguration } from "../shared/oauth-configuration";
 import type { ApprovalRequest, AuditEvent, ConnectorConnection, ConnectorProviderId } from "../shared/assistant-types";
 import { COOKIE_NAME } from "../shared/const";
 import * as db from "./db";
 import { getSessionCookieOptions } from "./_core/cookies";
 import { invokeLLM } from "./_core/llm";
 import { systemRouter } from "./_core/systemRouter";
-import { protectedProcedure, publicProcedure, router } from "./_core/trpc";
+import { adminProcedure, protectedProcedure, publicProcedure, router } from "./_core/trpc";
 
 const providerIdSchema = z.enum(["github", "google_workspace"]);
 const approvalDecisionSchema = z.enum(["approved", "rejected"]);
@@ -117,6 +118,13 @@ export const appRouter = router({
 
   connectors: router({
     catalog: publicProcedure.query(() => connectorCatalog),
+
+    admin: router({
+      providerConfiguration: adminProcedure.query(() => ({
+        providers: oauthProviderConfiguration.map((provider) => resolveProviderConfiguration(provider, process.env)),
+        pkcePolicy,
+      })),
+    }),
 
     overview: protectedProcedure.query(async ({ ctx }) => {
       const [connections, approvals, auditEvents] = await Promise.all([

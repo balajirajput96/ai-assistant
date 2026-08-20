@@ -17,3 +17,7 @@
 - [x] Build settings interfaces for connector visibility, approvals, audit history, disconnect controls, and honest OAuth-unavailable states.
 - [x] Add deterministic security tests and production OAuth setup documentation.
 - [x] Validate the OAuth connector enhancement and save a completion checkpoint.
+- [x] Define a provider credential boundary that keeps client secrets out of the mobile UI and documents PKCE requirements.
+- [x] Add protected provider configuration and PKCE policy state with redacted credential metadata.
+- [x] Build a mobile UI for provider configuration readiness, redirect details, PKCE policy, and credential-management handoff.
+- [x] Add tests and updated OAuth setup documentation, then save a completion checkpoint.
