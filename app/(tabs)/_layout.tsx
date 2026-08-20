@@ -1,9 +1,8 @@
 import { Tabs } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-
+import MaterialIcons from "@expo/vector-icons/MaterialIcons";
+import { Platform, StyleSheet } from "react-native";
 import { HapticTab } from "@/components/haptic-tab";
-import { IconSymbol } from "@/components/ui/icon-symbol";
-import { Platform } from "react-native";
 import { useColors } from "@/hooks/use-colors";
 
 export default function TabLayout() {
@@ -26,15 +25,41 @@ export default function TabLayout() {
           borderTopColor: colors.border,
           borderTopWidth: 0.5,
         },
+        tabBarLabelStyle: styles.label,
       }}
     >
       <Tabs.Screen
         name="index"
         options={{
-          title: "Home",
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          title: "Chat",
+          tabBarIcon: ({ color }) => <MaterialIcons size={25} name="chat-bubble-outline" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="workflows"
+        options={{
+          title: "Workflows",
+          tabBarIcon: ({ color }) => <MaterialIcons size={25} name="account-tree" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="tasks"
+        options={{
+          title: "Tasks",
+          tabBarIcon: ({ color }) => <MaterialIcons size={25} name="check-circle-outline" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="settings"
+        options={{
+          title: "Settings",
+          tabBarIcon: ({ color }) => <MaterialIcons size={25} name="tune" color={color} />,
         }}
       />
     </Tabs>
   );
 }
+
+const styles = StyleSheet.create({
+  label: { fontSize: 11, fontWeight: "600" },
+});
