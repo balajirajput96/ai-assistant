@@ -119,6 +119,17 @@ export const appRouter = router({
   connectors: router({
     catalog: publicProcedure.query(() => connectorCatalog),
 
+    accountCatalog: protectedProcedure.query(() => ({
+      providers: connectorCatalog.map((connector) => {
+        const configuration = oauthProviderConfiguration.find((provider) => provider.id === connector.id);
+        const readiness = configuration ? resolveProviderConfiguration(configuration, process.env) : null;
+        return {
+          ...connector,
+          configurationReady: readiness?.ready ?? false,
+        };
+      }),
+    })),
+
     admin: router({
       providerConfiguration: adminProcedure.query(() => ({
         providers: oauthProviderConfiguration.map((provider) => resolveProviderConfiguration(provider, process.env)),

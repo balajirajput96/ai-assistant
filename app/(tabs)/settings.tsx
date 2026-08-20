@@ -1,5 +1,6 @@
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import { useMemo } from "react";
+import { useRouter } from "expo-router";
 import { ActivityIndicator, Alert, FlatList, Pressable, StyleSheet, Text, View } from "react-native";
 
 import { ScreenHeader } from "@/components/assistant/screen-header";
@@ -16,6 +17,7 @@ const titleCase = (value: string) => value.replace(/_/g, " ").replace(/\b\w/g, (
 
 export default function SettingsScreen() {
   const { addPreferenceMemory, agentMode, clearMemory, removeMemory, resetLocalData, retainConversation, setAgentMode, setRetainConversation, snapshot } = useAssistant();
+  const router = useRouter();
   const { isAuthenticated } = useAuth();
   const catalogQuery = trpc.connectors.catalog.useQuery();
   const overviewQuery = trpc.connectors.overview.useQuery(undefined, { enabled: isAuthenticated });
@@ -192,6 +194,7 @@ export default function SettingsScreen() {
               <MaterialIcons name="shield" size={20} color="#1B9C67" />
               <Text className="text-muted" style={styles.connectorIntroText}>Connector requests use a scope review and audit trail. OAuth does not start until a real provider client, PKCE redirect, server-side token store, and user sign-in are configured.</Text>
             </View>
+            <Pressable onPress={() => router.push("/accounts" as never)} style={({ pressed }) => [styles.manageAccountsAction, pressed && styles.pressed]}><MaterialIcons name="manage-accounts" size={18} color="#2F6BFF" /><Text style={styles.manageAccountsText}>Manage connected accounts</Text><MaterialIcons name="chevron-right" size={20} color="#2F6BFF" /></Pressable>
             {!isAuthenticated && <View style={styles.signInNotice}><MaterialIcons name="lock-outline" size={17} color="#305AAE" /><Text style={styles.signInNoticeText}>Sign in is required before connector records, approvals, or audit history can be accessed.</Text></View>}
             {(catalogQuery.data ?? []).map(renderConnector)}
             {isAuthenticated && pendingApprovals.length > 0 && <><Text className="text-muted" style={styles.inlineSectionLabel}>PENDING SCOPE REVIEWS</Text>{pendingApprovals.map(renderApproval)}</>}
@@ -256,6 +259,8 @@ const styles = StyleSheet.create({
   divider: { height: 1, marginLeft: 45 },
   connectorIntro: { alignItems: "flex-start", borderRadius: 16, borderWidth: 1, flexDirection: "row", gap: 10, marginBottom: 10, padding: 13 },
   connectorIntroText: { flex: 1, fontSize: 12, lineHeight: 18 },
+  manageAccountsAction: { alignItems: "center", backgroundColor: "#E7EEFF", borderRadius: 14, flexDirection: "row", gap: 8, marginBottom: 10, minHeight: 47, paddingHorizontal: 13 },
+  manageAccountsText: { color: "#2F6BFF", flex: 1, fontSize: 13, fontWeight: "800" },
   signInNotice: { alignItems: "flex-start", backgroundColor: "#E7EEFF", borderRadius: 14, flexDirection: "row", gap: 8, marginBottom: 10, padding: 11 },
   signInNoticeText: { color: "#305AAE", flex: 1, fontSize: 12, fontWeight: "700", lineHeight: 18 },
   connectorCard: { borderRadius: 18, borderWidth: 1, marginBottom: 9, padding: 14 },

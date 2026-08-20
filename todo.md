@@ -21,3 +21,7 @@
 - [x] Add protected provider configuration and PKCE policy state with redacted credential metadata.
 - [x] Build a mobile UI for provider configuration readiness, redirect details, PKCE policy, and credential-management handoff.
 - [x] Add tests and updated OAuth setup documentation, then save a completion checkpoint.
+- [x] Define safe user account connection states for configured, unconfigured, connected, and revoked providers.
+- [x] Implement dedicated account connection data access and protected connect/disconnect actions.
+- [x] Build a user-facing account settings page for GitHub and Google Workspace connection management.
+- [x] Validate account connection controls and save a completion checkpoint.
