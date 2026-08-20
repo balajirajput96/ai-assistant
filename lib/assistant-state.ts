@@ -39,8 +39,8 @@ export const providerStatuses: ProviderStatus[] = [
     id: "connectors",
     label: "Connected tools",
     capability: "MCP and third-party services",
-    status: "unavailable",
-    detail: "No connector is authorized in this prototype. External actions cannot run from this client.",
+    status: "planned",
+    detail: "OAuth scope reviews and audit records are available after sign-in. Real provider authorization requires server credentials and validated PKCE redirects.",
   },
 ];
 

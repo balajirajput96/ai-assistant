@@ -11,3 +11,9 @@
 - [x] Generate unique app branding and update all application icon locations and metadata.
 - [x] Add deterministic unit tests for core state transitions and validate the project build.
 - [x] Verify the completed mobile prototype visually and save a completion checkpoint.
+- [x] Assess available connector configurations and select a safe prototype scope.
+- [x] Define typed connector, approval, and audit-record models with risk-aware state transitions.
+- [x] Implement protected server procedures for connector listing, scoped connection requests, approval decisions, and audit retrieval.
+- [x] Build settings interfaces for connector visibility, approvals, audit history, disconnect controls, and honest OAuth-unavailable states.
+- [x] Add deterministic security tests and production OAuth setup documentation.
+- [x] Validate the OAuth connector enhancement and save a completion checkpoint.
