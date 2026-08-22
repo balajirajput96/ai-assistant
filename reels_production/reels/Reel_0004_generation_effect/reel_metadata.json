@@ -61,6 +61,7 @@
     "status": "uploaded_verified",
     "folder_id": "1lnqiscoLyUZ_zDaFPvTZpoQJXHXnlM22",
     "verification_record": "delivery_verification.json",
-    "verified_file_count_before_verification_record": 10
+    "verified_file_count_before_verification_record": 10,
+    "archive_note": "The MP4 and WAV binaries are Drive-verified and may be archived outside the project before checkpointing. The idempotent uploader resolves an existing Drive artifact before requiring a local binary."
   }
 }
