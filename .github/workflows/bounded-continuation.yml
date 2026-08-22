@@ -1,0 +1,85 @@
+name: Bounded engineering continuation
+
+on:
+  schedule:
+    # GitHub Actions schedules use five-field UTC cron. Offset avoids the top-of-hour peak.
+    - cron: "23 * * * *"
+  workflow_dispatch:
+    inputs:
+      publish_evidence:
+        description: "Publish a continuation evidence record for this manually dispatched validation run"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bounded-engineering-continuation
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    # Scheduled work stops after 2,400 cycles; manual dispatch remains available for review.
+    if: github.event_name == 'workflow_dispatch' || github.run_number <= 2400
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Install locked dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run a bounded continuation cycle
+        run: python3 automation/continuation/continuation.py --cycle "${GITHUB_RUN_NUMBER}" --output "$RUNNER_TEMP/continuation-cycle.json"
+
+      - name: Validate cycle evidence
+        if: always()
+        run: |
+          set -euo pipefail
+          python3 -m json.tool "$RUNNER_TEMP/continuation-cycle.json" >/dev/null
+          test -s "$RUNNER_TEMP/continuation-cycle.json"
+
+      - name: Publish scheduled evidence
+        if: github.event_name == 'schedule' || inputs.publish_evidence == true
+        env:
+          STATE_BRANCH: continuation-state
+        run: |
+          set -euo pipefail
+          state_dir="$RUNNER_TEMP/continuation-state"
+          git fetch origin "$STATE_BRANCH" || true
+          if git show-ref --verify --quiet "refs/remotes/origin/$STATE_BRANCH"; then
+            git worktree add --detach "$state_dir" "origin/$STATE_BRANCH"
+            git -C "$state_dir" checkout -B "$STATE_BRANCH" "origin/$STATE_BRANCH"
+          else
+            git worktree add -b "$STATE_BRANCH" "$state_dir"
+          fi
+          mkdir -p "$state_dir/records"
+          cp "$RUNNER_TEMP/continuation-cycle.json" "$state_dir/records/${GITHUB_RUN_NUMBER}.json"
+          cat > "$state_dir/latest.json" <<EOF
+          {
+            "cycle": ${GITHUB_RUN_NUMBER},
+            "record": "records/${GITHUB_RUN_NUMBER}.json",
+            "source_sha": "${GITHUB_SHA}",
+            "workflow_run_id": "${GITHUB_RUN_ID}",
+            "generated_at": "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          }
+          EOF
+          git -C "$state_dir" config user.name "github-actions[bot]"
+          git -C "$state_dir" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C "$state_dir" add "records/${GITHUB_RUN_NUMBER}.json" latest.json
+          git -C "$state_dir" commit -m "chore: record continuation cycle ${GITHUB_RUN_NUMBER}"
+          git -C "$state_dir" push origin "HEAD:$STATE_BRANCH"

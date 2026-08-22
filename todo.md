@@ -25,3 +25,9 @@
 - [x] Implement dedicated account connection data access and protected connect/disconnect actions.
 - [x] Build a user-facing account settings page for GitHub and Google Workspace connection management.
 - [x] Validate account connection controls and save a completion checkpoint.
+- [x] Inventory the accessible project, Git repository, branches, automation, tooling, and connector configuration without destructive changes.
+- [x] Design a bounded, resumable continuation workflow with machine-readable state, idempotent steps, and explicit safety limits.
+- [x] Add repository-local continuation scripts, GitHub workflow definitions, validation checks, and operational documentation.
+- [x] Verify the automation assets locally and document which actions remain manual or require credentials.
+- [ ] Commit and synchronize verified continuation assets to the selected GitHub repository.
+- [ ] Save a completion checkpoint for the environment-maintenance enhancement.

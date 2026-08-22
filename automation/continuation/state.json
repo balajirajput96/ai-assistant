@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "cycle_limit": 2400,
+  "state_branch": "continuation-state",
+  "mutation_policy": "read_only_validation",
+  "description": "Scheduled validation publishes one immutable JSON evidence record per cycle. Repairs, deployments, and external-account actions require separately reviewed changes."
+}
