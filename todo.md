@@ -31,3 +31,8 @@
 - [x] Verify the automation assets locally and document which actions remain manual or require credentials.
 - [x] Commit and synchronize verified continuation assets to the selected GitHub repository.
 - [x] Save a completion checkpoint for the environment-maintenance enhancement.
+- [x] Reconfirm the preserved project, remote, and workflow baseline under the approved safe-maintenance scope.
+- [x] Inspect the queued GitHub Actions runs and available dependency security evidence without expanding access.
+- [x] Repair only confirmed local automation issues through reviewable source changes.
+- [x] Run local validation and synchronize only verified changes to the private repository.
+- [ ] Save a recovery checkpoint and document the remaining remote-run limitation.

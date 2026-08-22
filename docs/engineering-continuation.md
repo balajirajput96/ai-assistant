@@ -35,6 +35,8 @@ The environment audit verified an existing bounded workflow-health implementatio
 
 GitHub-scheduled events can be delayed or missed by the platform, so the workflow records actual run evidence rather than claiming a guaranteed wall-clock execution. A manual `workflow_dispatch` remains available for review and may publish an evidence record when explicitly requested. A failed check produces a reviewable JSON record and a failed run; it does not retry indefinitely.
 
+If a dispatched run remains queued, the repository treats it as **incomplete**, not failed or passed. The bounded response is to preserve the run URL and status in a baseline record, inspect repository Actions availability without changing account settings, and wait for a platform conclusion. It must not submit duplicate runs, cancel unrelated jobs, or claim that state-branch evidence was produced.
+
 ## References
 
 [1] [GitHub Docs — Workflow syntax: schedules](https://docs.github.com/actions/using-workflows/workflow-syntax-for-github-actions)
