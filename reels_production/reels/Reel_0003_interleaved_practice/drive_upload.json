@@ -1,0 +1,19 @@
+{
+  "root_folder_id": "1fKigp_hlEqqWB0F0DkMeKXTpMQXzPnrv",
+  "batch_folder_id": "1IVZ7DnZ7h1HnAXSmrkRr6QlKvkiD2Nm5",
+  "reel_folder_id": "1IucMpNfsHu1RbUz_-TQEvIwdJT6b7cK3",
+  "files": {
+    "reel_0003.mp4": "1o-_EqYhM-6NRELLqXMsibidRvJK8Ljde",
+    "narration_hi.wav": "1VoUSwj21VM0wNuZKUc-yNRca-leDehKM",
+    "script_hi.txt": "13vsDCj6J5w0btVwtUjPRAmu260oOG-sH",
+    "captions_hi.srt": "1e5aw1kTzoBUU8pC6V5M0U2Z6_GoDcOKT",
+    "sources.json": "1G2M1Pm14hB9PK2Dj_LOPccbYUOZ_aBr8",
+    "research_notes.md": "1pntcPmuteOmEQiNpjXxOpk9GW1fUah6F",
+    "visual_brief.md": "12whlazGPdYQiixkw6GuT1y-srZIDl4ui",
+    "generate_visuals.py": "17Xa9o-Rba2R2upjj0wuiS1EI5ZR76yHu",
+    "reel_metadata.json": "1IBCm2pCadM_L5pOxgrb5MmYe4XAupI0R",
+    "qc.json": "1ZO7MHhFjjW79Y_YlemGlGYhH_D7Fhd60",
+    "delivery_verification.json": "1gCV3rUyFg-CiDpJR2AyNZKs7gN0tN759"
+  },
+  "status": "uploaded"
+}

@@ -48,4 +48,9 @@
 - [x] Prepare non-duplicate research queue entries for the remaining Batch_001 reels without marking them complete.
 - [x] Validate the bounded workflow and preserve a production checkpoint after Reel 0001 delivery.
 - [x] Research, produce, quality-check, upload, and verify Reel 0002 with a bounded visual fallback documented in its metadata.
-- [ ] Research and produce Reel 0003 on interleaving only after its own evidence, media, QC, and Drive gates pass.
+- [x] Research and produce Reel 0003 on interleaving only after its own evidence, media, QC, and Drive gates pass.
+- [x] Revalidate the Reel 0002 checkpoint and reserve Reel 0003 without regenerating completed deliveries.
+- [x] Verify non-duplicate scientific evidence and claim limits for Reel 0003 interleaving.
+- [x] Produce, QC, and Drive-verify Reel 0003 with persistent delivery records.
+- [ ] Commit and checkpoint the updated bounded state only after Reel 0003’s delivery evidence is confirmed.
+- [ ] Research and produce Reel 0004 on the generation effect and attempt-before-answer only after its own evidence, media, QC, and Drive gates pass.

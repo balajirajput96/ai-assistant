@@ -1,0 +1,35 @@
+{
+  "reel_id": "0003",
+  "evidence_classification": "Scientific evidence: peer-reviewed review, systematic review/meta-analysis, and classroom study.",
+  "sources": [
+    {
+      "id": "rohrer_2012",
+      "type": "peer_reviewed_review",
+      "citation": "Rohrer, D. (2012). Interleaving helps students distinguish among similar concepts. Educational Psychology Review, 24, 355–367.",
+      "doi": "10.1007/s10648-012-9201-3",
+      "url": "https://link.springer.com/article/10.1007/s10648-012-9201-3",
+      "supports": "Interleaving can aid discrimination among similar concepts, but the review cautions that evidence is limited."
+    },
+    {
+      "id": "firth_rivers_boyle_2021",
+      "type": "peer_reviewed_systematic_review_meta_analysis",
+      "citation": "Firth, J., Rivers, I., & Boyle, J. (2021). A systematic review of interleaving as a concept learning strategy. Review of Education, 9, 642–684.",
+      "doi": "10.1002/rev3.3266",
+      "url": "https://bera-journals.onlinelibrary.wiley.com/doi/10.1002/rev3.3266",
+      "supports": "Interleaving was most useful when differences were subtle; the evidence base was dominated by laboratory studies of university undergraduates."
+    },
+    {
+      "id": "samani_pan_2021",
+      "type": "peer_reviewed_classroom_study",
+      "citation": "Samani, J., & Pan, S. C. (2021). Interleaved practice enhances memory and problem-solving ability in undergraduate physics. npj Science of Learning, 6, 32.",
+      "doi": "10.1038/s41539-021-00110-x",
+      "url": "https://www.nature.com/articles/s41539-021-00110-x",
+      "supports": "In one undergraduate physics course, interleaved homework felt more difficult but led to better later performance on novel criterial-test problems."
+    }
+  ],
+  "claim_limits": [
+    "The reel does not claim that interleaving is universally superior or that unrelated material should be randomly mixed.",
+    "The practical mini-set follows initial instruction and uses closely related problem types.",
+    "The reel makes no guarantee of scores or learning outcomes."
+  ]
+}

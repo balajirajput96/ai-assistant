@@ -1,0 +1,31 @@
+{
+  "reel_id": "0003",
+  "status": "uploaded_verified",
+  "verified_at": "2026-08-22T05:27:00+00:00",
+  "drive": {
+    "root_folder_id": "1fKigp_hlEqqWB0F0DkMeKXTpMQXzPnrv",
+    "batch_folder_id": "1IVZ7DnZ7h1HnAXSmrkRr6QlKvkiD2Nm5",
+    "reel_folder_id": "1IucMpNfsHu1RbUz_-TQEvIwdJT6b7cK3",
+    "verified_file_count_before_this_record": 10,
+    "final_video": {
+      "file_name": "reel_0003.mp4",
+      "file_id": "1o-_EqYhM-6NRELLqXMsibidRvJK8Ljde",
+      "sha256": "2d1c2cb586e5cc90d9e7495c3a3b7a09e1696d423973f2e0ab9fa8f1735aa82a",
+      "size_bytes": 1553978
+    },
+    "narration": {
+      "file_name": "narration_hi.wav",
+      "file_id": "1VoUSwj21VM0wNuZKUc-yNRca-leDehKM",
+      "size_bytes": 3081644
+    }
+  },
+  "quality_control": {
+    "status": "passed",
+    "video_dimensions": "720x1280",
+    "duration_seconds": 64.16,
+    "caption_timing_within_video": true,
+    "audio_stream_present": true,
+    "source_count": 3
+  },
+  "visual_production_note": "The daily AI-image quota was unavailable. The delivered video uses four original topic-specific motion-graphics scenes generated from source-controlled geometry; it does not claim ungenerated AI images were used."
+}

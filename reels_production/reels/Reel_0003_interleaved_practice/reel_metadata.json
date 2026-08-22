@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "reel_id": "0003",
+  "batch_id": "001",
+  "title_hi": "एक ही तरह के सवाल या मिला-जुला अभ्यास?",
+  "topic": {
+    "category": "Learning",
+    "subtopic": "Interleaving",
+    "angle_template": "common_myth_vs_evidence",
+    "claim_slug": "mixed-practice-vs-block-practice"
+  },
+  "evidence_classification": "Scientific evidence with task-specific limits and a practical non-universal mini-set implementation.",
+  "status": "qc_passed_pending_drive_delivery",
+  "source_files": {
+    "research_notes": "research_notes.md",
+    "sources": "sources.json",
+    "script": "script_hi.txt",
+    "voice_prompt": "tts_prompt.txt",
+    "visual_brief": "visual_brief.md",
+    "visual_generator": "generate_visuals.py"
+  },
+  "media": {
+    "target_aspect_ratio": "9:16",
+    "target_resolution": "720x1280",
+    "target_duration_seconds": "50-65",
+    "voice_language": "hi-IN",
+    "voice_name": "Charon",
+    "narration": {
+      "status": "generated",
+      "file": "narration_hi.wav",
+      "duration_seconds": 64.2
+    },
+    "visuals": {
+      "status": "motion_graphics_generated",
+      "generator": "generate_visuals.py",
+      "reason": "Daily AI-image quota unavailable; original source-controlled visual geometry was rendered instead of claiming ungenerated AI assets."
+    },
+    "captions": {
+      "status": "timed",
+      "file": "captions_hi.srt",
+      "last_caption_end_seconds": 64.0
+    },
+    "final_video": "pending"
+  },
+  "qc": {
+    "status": "passed",
+    "file": "qc.json",
+    "video_sha256": "2d1c2cb586e5cc90d9e7495c3a3b7a09e1696d423973f2e0ab9fa8f1735aa82a",
+    "checks": {
+      "vertical_9_16": true,
+      "minimum_delivery_resolution": true,
+      "duration_seconds": 64.16,
+      "duration_target": true,
+      "captions_within_video": true,
+      "audio_stream_present": true,
+      "sources_json_valid": true
+    }
+  },
+  "delivery": {
+    "destination": "Google Drive / 3000_HINDI_RESEARCH_REELS / Batch_001",
+    "status": "uploaded_verified",
+    "folder_id": "1IucMpNfsHu1RbUz_-TQEvIwdJT6b7cK3",
+    "verification_record": "delivery_verification.json",
+    "verified_file_count_before_verification_record": 10
+  }
+}
