@@ -52,5 +52,5 @@
 - [x] Revalidate the Reel 0002 checkpoint and reserve Reel 0003 without regenerating completed deliveries.
 - [x] Verify non-duplicate scientific evidence and claim limits for Reel 0003 interleaving.
 - [x] Produce, QC, and Drive-verify Reel 0003 with persistent delivery records.
-- [ ] Commit and checkpoint the updated bounded state only after Reel 0003’s delivery evidence is confirmed.
+- [x] Commit and checkpoint the updated bounded state only after Reel 0003’s delivery evidence is confirmed.
 - [ ] Research and produce Reel 0004 on the generation effect and attempt-before-answer only after its own evidence, media, QC, and Drive gates pass.
