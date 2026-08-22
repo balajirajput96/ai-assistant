@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "reel_id": "0004",
+  "batch_id": "001",
+  "title_hi": "Guess करो, फिर answer देखो?",
+  "topic": {
+    "category": "Learning",
+    "subtopic": "Generation effect / pretesting",
+    "angle_template": "mechanism_with_caveat",
+    "claim_slug": "attempt-before-answer"
+  },
+  "evidence_classification": "Scientific evidence with feedback and target-specific learning limits.",
+  "status": "qc_passed_pending_drive_delivery",
+  "source_files": {
+    "research_notes": "research_notes.md",
+    "sources": "sources.json",
+    "script": "script_hi.txt",
+    "voice_prompt": "tts_prompt.txt",
+    "visual_brief": "visual_brief.md",
+    "visual_generator": "generate_visuals.py"
+  },
+  "media": {
+    "target_aspect_ratio": "9:16",
+    "target_resolution": "720x1280",
+    "target_duration_seconds": "50-65",
+    "voice_language": "hi-IN",
+    "voice_name": "Charon",
+    "narration": {
+      "status": "generated",
+      "file": "narration_hi.wav",
+      "duration_seconds": 60.12
+    },
+    "visuals": {
+      "status": "motion_graphics_generated",
+      "generator": "generate_visuals.py",
+      "reason": "Daily AI-image quota unavailable; original source-controlled visual geometry was rendered instead of claiming ungenerated AI assets."
+    },
+    "captions": {
+      "status": "timed",
+      "file": "captions_hi.srt",
+      "last_caption_end_seconds": 60.0
+    },
+    "final_video": "pending"
+  },
+  "qc": {
+    "status": "passed",
+    "file": "qc.json",
+    "video_sha256": "e8bec88e3e7298277fd9c9455104a5f19d900e2ab08ab6ea0456de338121ce4f",
+    "checks": {
+      "vertical_9_16": true,
+      "minimum_delivery_resolution": true,
+      "duration_seconds": 60.12,
+      "duration_target": true,
+      "captions_within_video": true,
+      "audio_stream_present": true,
+      "sources_json_valid": true
+    }
+  },
+  "delivery": {
+    "destination": "Google Drive / 3000_HINDI_RESEARCH_REELS / Batch_001",
+    "status": "uploaded_verified",
+    "folder_id": "1lnqiscoLyUZ_zDaFPvTZpoQJXHXnlM22",
+    "verification_record": "delivery_verification.json",
+    "verified_file_count_before_verification_record": 10
+  }
+}

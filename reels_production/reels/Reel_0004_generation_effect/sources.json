@@ -1,0 +1,35 @@
+{
+  "reel_id": "0004",
+  "evidence_classification": "Scientific evidence: peer-reviewed review, controlled experiment, and preregistered meta-analysis.",
+  "sources": [
+    {
+      "id": "pan_carpenter_2023",
+      "type": "peer_reviewed_review",
+      "citation": "Pan, S. C., & Carpenter, S. K. (2023). Prequestioning and pretesting effects: A review of empirical research, theoretical perspectives, and implications for educational practice. Educational Psychology Review, 35, 97.",
+      "doi": "10.1007/s10648-023-09814-5",
+      "url": "https://link.springer.com/article/10.1007/s10648-023-09814-5",
+      "supports": "Attempting questions before learning can often enhance learning when correct answers can be studied afterward; outcomes vary with procedure and assessment."
+    },
+    {
+      "id": "pan_sana_2021",
+      "type": "peer_reviewed_experiment",
+      "citation": "Pan, S. C., & Sana, F. (2021). Pretesting versus posttesting: Comparing the pedagogical benefits of errorful generation and retrieval practice. Journal of Experimental Psychology: Applied, 27, 237–257.",
+      "doi": "10.1037/xap0000345",
+      "url": "https://sc-pan.github.io/pdf/PS_2021.pdf",
+      "supports": "Across five experiments in this paper, both pretesting and posttesting exceeded a no-test control on later memory tests; this is not a guarantee for every topic or learner."
+    },
+    {
+      "id": "st_hilaire_chan_ahn_2024",
+      "type": "peer_reviewed_preregistered_meta_analysis",
+      "citation": "St. Hilaire, K. J., Chan, J. C. K., & Ahn, D. (2024). Guessing as a learning intervention: A meta-analytic review of the prequestion effect. Psychonomic Bulletin & Review, 31, 411–441.",
+      "doi": "10.3758/s13423-023-02353-8",
+      "url": "https://link.springer.com/article/10.3758/s13423-023-02353-8",
+      "supports": "Prequestions showed a moderate benefit for initially tested material and virtually no overall general benefit for untested material, supporting a one-question, one-target implementation boundary."
+    }
+  ],
+  "claim_limits": [
+    "The reel does not claim that incorrect answers alone teach or that feedback can be omitted.",
+    "The practical routine is one meaningful target question followed by correct answer study and a brief explanation.",
+    "The reel does not claim broad learning benefits for material that was not directly tested or studied."
+  ]
+}

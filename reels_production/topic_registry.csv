@@ -2,7 +2,7 @@ reel_id,batch_id,category_id,subtopic,angle_template,primary_claim_slug,status,d
 0001,001,learning,retrieval_practice,common_myth_vs_evidence,testing-is-a-learning-tool,uploaded,learning|retrieval_practice|common_myth_vs_evidence|testing-is-a-learning-tool,2026-08-22T00:00:00Z
 0002,001,learning,spacing,one_practical_experiment,spaced-review-plan,uploaded,learning|spacing|one_practical_experiment|spaced-review-plan,2026-08-22T04:42:33.297930+00:00
 0003,001,learning,interleaving,common_myth_vs_evidence,mixed-practice-vs-block-practice,uploaded,learning|interleaving|common_myth_vs_evidence|mixed-practice-vs-block-practice,2026-08-22T04:42:33.297943+00:00
-0004,001,learning,generation_effect,mechanism_with_caveat,attempt-before-answer,planned,learning|generation_effect|mechanism_with_caveat|attempt-before-answer,2026-08-22T04:42:33.297946+00:00
+0004,001,learning,generation_effect,mechanism_with_caveat,attempt-before-answer,uploaded,learning|generation_effect|mechanism_with_caveat|attempt-before-answer,2026-08-22T04:42:33.297946+00:00
 0005,001,learning,feedback,everyday_decision_case,feedback-after-attempt,planned,learning|feedback|everyday_decision_case|feedback-after-attempt,2026-08-22T04:42:33.297947+00:00
 0006,001,memory,sleep_and_memory,mechanism_with_caveat,sleep-and-consolidation-boundary,planned,memory|sleep_and_memory|mechanism_with_caveat|sleep-and-consolidation-boundary,2026-08-22T04:42:33.297949+00:00
 0007,001,learning,cognitive_load,one_practical_experiment,simplify-learning-material,planned,learning|cognitive_load|one_practical_experiment|simplify-learning-material,2026-08-22T04:42:33.297950+00:00
