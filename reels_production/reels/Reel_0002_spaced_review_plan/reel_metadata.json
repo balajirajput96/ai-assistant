@@ -84,6 +84,7 @@
       "method": "Drive folder inventory",
       "verified_file_count": 9,
       "verified_at": "2026-08-22T05:07:00+00:00"
-    }
+    },
+    "archive_note": "The MP4 and WAV binaries are Drive-verified and archived outside the project before checkpointing. The idempotent uploader resolves existing Drive artifacts before requiring a local binary."
   }
 }

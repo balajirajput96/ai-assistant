@@ -43,6 +43,8 @@ def upload_once(path: Path, parent_id: str) -> str:
     existing = find_named(path.name, parent_id)
     if existing:
         return existing
+    if not path.is_file():
+        raise FileNotFoundError(f"Missing local artifact that is not already present in Drive: {path}")
     mime_type = mimetypes.guess_type(path.name)[0] or "application/octet-stream"
     uploaded = gws(
         "drive", "files", "create",
@@ -68,9 +70,6 @@ def main() -> int:
         REEL_DIR / "qc.json",
         REEL_DIR / "delivery_verification.json",
     ]
-    missing = [str(path) for path in artifacts if not path.is_file()]
-    if missing:
-        raise FileNotFoundError("Missing verified delivery artifacts: " + ", ".join(missing))
     record = {
         "root_folder_id": json.loads(DRIVE_STATE.read_text(encoding="utf-8"))["root_folder_id"],
         "batch_folder_id": batch_id,
