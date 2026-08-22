@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "target_reel_count": 3000,
+  "categories": [
+    {"id": "psychology", "label_hi": "मनोविज्ञान", "subtopics": ["ध्यान", "भावनाएँ", "प्रेरणा", "सामाजिक व्यवहार", "व्यक्तित्व", "तनाव", "निर्णय", "संज्ञानात्मक पक्षपात"]},
+    {"id": "neuroscience", "label_hi": "तंत्रिका-विज्ञान", "subtopics": ["ध्यान नेटवर्क", "स्मृति प्रणाली", "नींद", "संवेदी प्रसंस्करण", "न्यूरोप्लास्टिसिटी", "भावना विनियमन", "मस्तिष्क-विकास"]},
+    {"id": "learning", "label_hi": "सीखना", "subtopics": ["पुनर्प्राप्ति अभ्यास", "स्पेस्ड रिपीटिशन", "गलतियाँ", "कौशल", "फीडबैक", "मेटाकॉग्निशन", "जिज्ञासा"]},
+    {"id": "habits", "label_hi": "आदतें", "subtopics": ["संकेत", "पर्यावरण", "पुरस्कार", "पहचान", "रूटीन", "व्यवधान", "छोटी शुरुआत"]},
+    {"id": "memory", "label_hi": "स्मृति", "subtopics": ["वर्किंग मेमोरी", "भूलना", "गलत स्मृतियाँ", "स्मृति-संकेत", "नींद और स्मृति", "भावात्मक स्मृति"]},
+    {"id": "consciousness", "label_hi": "चेतना", "subtopics": ["ध्यान", "स्व-अनुभव", "सपने", "अनुभूति", "चेतना के सिद्धांत", "सीमाएँ"]},
+    {"id": "meditation", "label_hi": "ध्यान-अभ्यास", "subtopics": ["सचेतनता", "करुणा", "श्वास", "एकाग्रता", "अपेक्षाएँ", "सुरक्षा", "अभ्यास की सीमाएँ"]},
+    {"id": "philosophy", "label_hi": "दर्शन", "subtopics": ["स्व", "अर्थ", "स्वतंत्र इच्छा", "ज्ञान", "नैतिकता", "समय", "मन-शरीर समस्या"]},
+    {"id": "spirituality", "label_hi": "आध्यात्मिकता", "subtopics": ["अनुभव", "करुणा", "अनित्यता", "अनुष्ठान", "अर्थ-निर्माण", "समुदाय", "विश्वास और प्रमाण"]},
+    {"id": "wellbeing", "label_hi": "मानसिक कल्याण", "subtopics": ["संबंध", "भावनात्मक साक्षरता", "आराम", "प्रकृति", "कृतज्ञता", "सीमाएँ", "सहायता लेना"]}
+  ],
+  "angle_templates": [
+    "common_myth_vs_evidence",
+    "mechanism_with_caveat",
+    "one_practical_experiment",
+    "correlation_vs_causation",
+    "what_the_research_cannot_say",
+    "cross_cultural_perspective",
+    "historical_idea_and_modern_evidence",
+    "everyday_decision_case"
+  ],
+  "duplicate_key": "category_id + subtopic + angle_template + primary_claim_slug"
+}

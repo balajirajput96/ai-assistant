@@ -1,0 +1,44 @@
+{
+  "reel_id": "0001",
+  "batch_id": "001",
+  "status": "uploaded",
+  "topic": {
+    "title_hi": "पढ़ना नहीं, याद से निकालना",
+    "category_id": "learning",
+    "subtopic": "retrieval_practice",
+    "angle": "common_myth_vs_evidence"
+  },
+  "claims": ["claim_01", "claim_02"],
+  "sources": ["sources.json"],
+  "artifacts": {
+    "script": "script_hi.md",
+    "voice_audio": "narration_hi.wav",
+    "visual_assets": [
+      "reel0001_scene01.png",
+      "reel0001_scene02.png",
+      "reel0001_scene03.png",
+      "reel0001_scene04.png"
+    ],
+    "captions": "captions_hi.srt",
+    "final_video": "reel_0001.mp4",
+    "sha256": "5e5a0a13f790a12587faf73af023223c54dbd053243624d3cd7faa99a72e3894"
+  },
+  "qc": {
+    "factual_accuracy": "source_metadata_reviewed",
+    "duration": "passed_52.16_seconds",
+    "aspect_ratio": "passed_9_16_720x1280",
+    "audio": "passed_aac_stream",
+    "captions": "passed_within_video_duration",
+    "file_integrity": "passed_sha256_recorded"
+  },
+  "drive": {
+    "root_folder_id": "1fKigp_hlEqqWB0F0DkMeKXTpMQXzPnrv",
+    "batch_folder_id": "1IVZ7DnZ7h1HnAXSmrkRr6QlKvkiD2Nm5",
+    "reel_folder_id": "1MFZ0RHvfGggRHzzEkRr1ofUS5M6iPyCJ",
+    "final_video_file_id": "1S3bbndYpfj7NL4cW-xGy_IUgkN1qc387",
+    "source_metadata_file_id": "1rxduOJ8TnQMMcwyi03bUWqmMBEu_uq1-",
+    "qc_file_id": "1YS16--e-rOPhb3mtD-G53d-6UPiVrVeT",
+    "upload_status": "uploaded"
+  },
+  "archive_note": "Final MP4 delivery is verified in Google Drive. Local render binaries are excluded from source checkpoints; source metadata, captions, QC result, and Drive identifiers remain in this record."
+}

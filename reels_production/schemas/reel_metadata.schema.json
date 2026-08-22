@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Hindi Research Reel Metadata",
+  "type": "object",
+  "required": ["reel_id", "batch_id", "status", "topic", "claims", "sources", "artifacts", "qc", "drive"],
+  "properties": {
+    "reel_id": {"type": "string", "pattern": "^[0-9]{4}$"},
+    "batch_id": {"type": "string", "pattern": "^[0-9]{3}$"},
+    "status": {"enum": ["planned", "researching", "researched", "scripted", "media_in_progress", "qc_pending", "verified", "uploaded", "blocked", "failed"]},
+    "topic": {"type": "object"},
+    "claims": {"type": "array"},
+    "sources": {"type": "array"},
+    "artifacts": {"type": "object"},
+    "qc": {"type": "object"},
+    "drive": {"type": "object"}
+  }
+}

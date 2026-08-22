@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "operating_mode": "bounded_batch_pipeline",
+  "current_batch": "001",
+  "next_reel": "0002",
+  "max_parallel_reels": 1,
+  "retry_limit_per_stage": 2,
+  "last_verified_upload": "0001",
+  "batch_completion_rule": "All 30 reels must have uploaded status plus verified Drive evidence.",
+  "on_interruption": "Validate local and Drive state, then resume only the next non-uploaded reel."
+}

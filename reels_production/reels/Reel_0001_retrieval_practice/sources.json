@@ -1,0 +1,40 @@
+{
+  "reel_id": "0001",
+  "topic": "Retrieval practice and long-term learning",
+  "claims": [
+    {
+      "id": "claim_01",
+      "text_hi": "सीखने के बाद जानकारी को याद करने की कोशिश कई शोधित संदर्भों में बाद की याददाश्त को सहारा दे सकती है।",
+      "classification": "scientific_evidence",
+      "supporting_sources": ["source_01", "source_02"],
+      "caveat_hi": "यह हर विषय, हर व्यक्ति और हर परिस्थिति में एक जैसा परिणाम देने की गारंटी नहीं है।"
+    },
+    {
+      "id": "claim_02",
+      "text_hi": "Spacing और retrieval साथ काम कर सकते हैं; rereading को बिल्कुल बेकार कहना सही नहीं है।",
+      "classification": "scientific_evidence",
+      "supporting_sources": ["source_01"],
+      "caveat_hi": "यह निष्कर्ष एक विशिष्ट प्रयोगात्मक तुलना से आता है और अलग सीखने की स्थितियों में प्रभाव बदल सकता है।"
+    }
+  ],
+  "sources": [
+    {
+      "id": "source_01",
+      "type": "peer_reviewed_primary_research",
+      "citation": "Soderstrom NC, Kerr TK, Bjork RA. The Critical Importance of Retrieval—and Spacing—for Learning. Psychological Science. 2016;27(2):223-230.",
+      "doi": "10.1177/0956797615617778",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26674128/",
+      "accessed_at": "2026-08-22",
+      "verified_notes_hi": "Abstract reports that repeated testing enhanced learning in one experiment, while a second within-subjects experiment controlling spacing found benefits for both repeated testing and restudying."
+    },
+    {
+      "id": "source_02",
+      "type": "systematic_review",
+      "citation": "Agarwal PK, Nunes LD, Blunt JR. Retrieval Practice Consistently Benefits Student Learning: a Systematic Review of Applied Research in Schools and Classrooms. Educational Psychology Review. 2021;33:1409-1453.",
+      "doi": "10.1007/s10648-021-09595-9",
+      "url": "https://link.springer.com/article/10.1007/s10648-021-09595-9",
+      "accessed_at": "2026-08-22",
+      "verified_notes_hi": "The abstract describes 50 coded experiments, 49 effect sizes, total n=5,374, and notes both broad benefits and limited non-WEIRD representation."
+    }
+  ]
+}

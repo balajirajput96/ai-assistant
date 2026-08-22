@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "target_reels": 3000,
+  "completed_reels": 1,
+  "current_reel": "0001",
+  "current_stage": "uploaded",
+  "completed_batches": [],
+  "blocked_reels": [],
+  "last_updated": "2026-08-22T04:39:24.758052+00:00",
+  "failure_policy": "A failed stage records its error and retry count. It must be repaired or explicitly marked blocked before any later stage can be completed."
+}

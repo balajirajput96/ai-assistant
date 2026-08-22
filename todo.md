@@ -36,3 +36,14 @@
 - [x] Repair only confirmed local automation issues through reviewable source changes.
 - [x] Run local validation and synchronize only verified changes to the private repository.
 - [x] Save a recovery checkpoint and document the remaining remote-run limitation.
+- [x] Audit available Drive, media generation, transcription, rendering, storage, and persistent automation capacity for the 3,000-reel mission.
+- [x] Define a research evidence policy, Hindi topic taxonomy, source metadata schema, and duplicate-prevention registry.
+- [x] Build a resumable production tracker with per-reel research, script, media, QC, and upload states.
+- [x] Research and verify Reel 0001 with primary or high-quality secondary sources.
+- [x] Produce and quality-check Reel 0001 with Hindi narration, captions, vertical visuals, and source metadata.
+- [x] Create the 100-batch Drive structure and upload only verified Reel 0001 materials.
+- [x] Define bounded automated batch progression and persistent failure handling for later reels.
+- [x] Record the selected bounded-batch production operating model and its safety gates.
+- [x] Add a resumable next-reel queue, retry policy, and machine-readable checkpoint state.
+- [x] Prepare non-duplicate research queue entries for the remaining Batch_001 reels without marking them complete.
+- [x] Validate the bounded workflow and preserve a production checkpoint after Reel 0001 delivery.
