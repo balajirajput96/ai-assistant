@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "checks": {
+    "sources_json_valid": true,
+    "captions_present": true,
+    "video_exists": true,
+    "vertical_9_16": true,
+    "minimum_delivery_resolution": true,
+    "duration_seconds": 54.8,
+    "duration_target": true,
+    "captions_within_video": true,
+    "audio_stream_present": true
+  }
+}

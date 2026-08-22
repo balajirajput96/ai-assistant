@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "reel_id": "0002",
+  "batch_id": "001",
+  "title_hi": "दोहराई कब करें?",
+  "topic": {
+    "category": "Learning",
+    "subtopic": "Spacing",
+    "angle_template": "one_practical_experiment",
+    "claim_slug": "spaced-review-plan"
+  },
+  "evidence_classification": "Scientific evidence with a practical non-universal reminder template.",
+  "status": "research_complete_scripted",
+  "source_files": {
+    "research_notes": "research_notes.md",
+    "sources": "sources.json",
+    "script": "script_hi.txt",
+    "voice_prompt": "tts_prompt.txt",
+    "visual_prompts": "visual_prompts.md"
+  },
+  "media": {
+    "target_aspect_ratio": "9:16",
+    "target_resolution": "720x1280",
+    "target_duration_seconds": "50-65",
+    "voice_language": "hi-IN",
+    "voice_name": "Charon",
+    "narration": {
+      "file": "narration_hi.wav",
+      "duration_seconds": 54.8,
+      "status": "generated"
+    },
+    "visuals": {
+      "status": "bounded_fallback_ready",
+      "production_note": "Scene 01 completed as a high-resolution AI visual. The three subsequent requested renders did not materialize before the daily image-generation quota was exhausted; final assembly uses four deliberately distinct crops and cinematic colour grades of Scene 01 instead of falsely claiming four completed AI images.",
+      "files": [
+        "reel0002_scene01.png"
+      ],
+      "asset_urls": [
+        "/manus-storage/reel0002_scene01_db1ae176.png"
+      ]
+    },
+    "captions": {
+      "file": "captions_hi.srt",
+      "status": "timed_to_narration"
+    },
+    "final_video": {
+      "file": "reel_0002.mp4",
+      "duration_seconds": 54.8,
+      "sha256": "cbc91b2ffcf63988ff28d35fcc2f95892fae535d80b7e45968344f40ec227b75",
+      "status": "rendered"
+    }
+  },
+  "qc": {
+    "status": "passed",
+    "file": "qc.json",
+    "checks": [
+      "sources_json_valid",
+      "captions_present",
+      "vertical_9_16",
+      "minimum_delivery_resolution",
+      "duration_target",
+      "captions_within_video",
+      "audio_stream_present"
+    ]
+  },
+  "delivery": {
+    "destination": "Google Drive / 3000_HINDI_RESEARCH_REELS / Batch_001",
+    "status": "uploaded_verified",
+    "root_folder_id": "1fKigp_hlEqqWB0F0DkMeKXTpMQXzPnrv",
+    "batch_folder_id": "1IVZ7DnZ7h1HnAXSmrkRr6QlKvkiD2Nm5",
+    "reel_folder_id": "1S_cZD50-wN3nC3eY85pplyYU5DjQsvZl",
+    "artifact_ids": {
+      "reel_0002.mp4": "1xgdimPqOI5I0KHiNlYjV5yYVuqC0CDdm",
+      "narration_hi.wav": "1ktKxyYHtVv5ecE9t1L69YL8rwVO7muRu",
+      "script_hi.txt": "1VsDO9I3vcve6uCiJ_eDdf-V1GmVDzlXS",
+      "captions_hi.srt": "1tbgzIXYq5bGUGRVV2e219EmmOzqPIFmE",
+      "sources.json": "1ebsw25o70ic22hFJVZoRfdtpkykVpxuA",
+      "research_notes.md": "1hq-Tstr5inIbvTPm_FdWUw1E1fsqLN_g",
+      "visual_prompts.md": "1e9XIukPwpBr0B4P1rXM0SSQU0wYdVUdv",
+      "reel_metadata.json": "1L3MzrGP5CVwLcx8NIZVLxvqri1LR-rif",
+      "qc.json": "1eLwkAesf8ltbcCTqa7zGLhZ3qlYTbL3Z"
+    },
+    "verification": {
+      "method": "Drive folder inventory",
+      "verified_file_count": 9,
+      "verified_at": "2026-08-22T05:07:00+00:00"
+    }
+  }
+}

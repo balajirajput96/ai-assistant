@@ -1,0 +1,35 @@
+{
+  "reel_id": "0002",
+  "evidence_classification": "Scientific evidence: peer-reviewed review articles and meta-analyses.",
+  "sources": [
+    {
+      "id": "carpenter_pan_butler_2022",
+      "type": "peer_reviewed_review",
+      "citation": "Carpenter, S. K., Pan, S. C., & Butler, A. C. (2022). The science of effective learning with spacing and retrieval practice. Nature Reviews Psychology, 1, 496–511.",
+      "doi": "10.1038/s44159-022-00089-1",
+      "url": "https://www.nature.com/articles/s44159-022-00089-1",
+      "supports": "Spacing and retrieval practice are researched learning strategies across domains and applied educational settings."
+    },
+    {
+      "id": "cepeda_2006",
+      "type": "peer_reviewed_quantitative_synthesis",
+      "citation": "Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T., & Rohrer, D. (2006). Distributed practice in verbal recall tasks: A review and quantitative synthesis. Psychological Bulletin, 132(3), 354–380.",
+      "doi": "10.1037/0033-2909.132.3.354",
+      "url": "https://digitalcommons.usf.edu/psy_facpub/1771/",
+      "supports": "Spacing and the time until desired final recall jointly affect retention; a universal best interval should not be claimed."
+    },
+    {
+      "id": "latimier_peyre_ramus_2021",
+      "type": "peer_reviewed_meta_analysis",
+      "citation": "Latimier, A., Peyre, H., & Ramus, F. (2021). A meta-analytic review of the benefit of spacing out retrieval practice episodes on retention. Educational Psychology Review, 33, 959–987.",
+      "doi": "10.1007/s10648-020-09572-8",
+      "url": "https://link.springer.com/article/10.1007/s10648-020-09572-8",
+      "supports": "Spacing retrieval episodes out showed benefit relative to massed retrieval; expanding intervals are not universally superior to uniform intervals."
+    }
+  ],
+  "claim_limits": [
+    "The 1, 3, 7, and 14 day sequence is a personal two-week starter experiment, not a universal optimum.",
+    "The reel makes no claim that spacing guarantees an outcome or replaces sufficient study time.",
+    "The reel distinguishes the evidence-supported practice from the chosen reminder-template implementation."
+  ]
+}

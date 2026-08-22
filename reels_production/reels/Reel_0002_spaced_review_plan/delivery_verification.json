@@ -1,0 +1,26 @@
+{
+  "reel_id": "0002",
+  "status": "uploaded_verified",
+  "verified_at": "2026-08-22T05:07:00+00:00",
+  "drive": {
+    "root_folder_id": "1fKigp_hlEqqWB0F0DkMeKXTpMQXzPnrv",
+    "batch_folder_id": "1IVZ7DnZ7h1HnAXSmrkRr6QlKvkiD2Nm5",
+    "reel_folder_id": "1S_cZD50-wN3nC3eY85pplyYU5DjQsvZl",
+    "verified_file_count_before_this_record": 9,
+    "final_video": {
+      "file_name": "reel_0002.mp4",
+      "file_id": "1xgdimPqOI5I0KHiNlYjV5yYVuqC0CDdm",
+      "sha256": "cbc91b2ffcf63988ff28d35fcc2f95892fae535d80b7e45968344f40ec227b75",
+      "size_bytes": 1815917
+    }
+  },
+  "quality_control": {
+    "status": "passed",
+    "video_dimensions": "720x1280",
+    "duration_seconds": 54.8,
+    "caption_timing_within_video": true,
+    "audio_stream_present": true,
+    "source_count": 3
+  },
+  "visual_production_note": "One AI reference scene completed. The remaining queued AI scenes did not materialize before the daily generation quota was exhausted; the delivered video uses documented cinematic crop and colour-grade variations of the completed source rather than claiming missing scenes were generated."
+}

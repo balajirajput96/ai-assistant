@@ -47,3 +47,5 @@
 - [x] Add a resumable next-reel queue, retry policy, and machine-readable checkpoint state.
 - [x] Prepare non-duplicate research queue entries for the remaining Batch_001 reels without marking them complete.
 - [x] Validate the bounded workflow and preserve a production checkpoint after Reel 0001 delivery.
+- [x] Research, produce, quality-check, upload, and verify Reel 0002 with a bounded visual fallback documented in its metadata.
+- [ ] Research and produce Reel 0003 on interleaving only after its own evidence, media, QC, and Drive gates pass.
