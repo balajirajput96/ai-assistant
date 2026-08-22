@@ -35,4 +35,4 @@
 - [x] Inspect the queued GitHub Actions runs and available dependency security evidence without expanding access.
 - [x] Repair only confirmed local automation issues through reviewable source changes.
 - [x] Run local validation and synchronize only verified changes to the private repository.
-- [ ] Save a recovery checkpoint and document the remaining remote-run limitation.
+- [x] Save a recovery checkpoint and document the remaining remote-run limitation.
