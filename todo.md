@@ -29,5 +29,5 @@
 - [x] Design a bounded, resumable continuation workflow with machine-readable state, idempotent steps, and explicit safety limits.
 - [x] Add repository-local continuation scripts, GitHub workflow definitions, validation checks, and operational documentation.
 - [x] Verify the automation assets locally and document which actions remain manual or require credentials.
-- [ ] Commit and synchronize verified continuation assets to the selected GitHub repository.
-- [ ] Save a completion checkpoint for the environment-maintenance enhancement.
+- [x] Commit and synchronize verified continuation assets to the selected GitHub repository.
+- [x] Save a completion checkpoint for the environment-maintenance enhancement.
