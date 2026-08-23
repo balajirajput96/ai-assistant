@@ -19,6 +19,9 @@ concurrency:
   group: bounded-engineering-continuation
   cancel-in-progress: false
 
+env:
+  STATE_BRANCH: continuation-state
+
 jobs:
   validate:
     # Scheduled work stops after 2,400 cycles; manual dispatch remains available for review.
@@ -31,6 +34,9 @@ jobs:
 
       - name: Set up pnpm
         uses: pnpm/action-setup@v4
+        with:
+          version: 9.12.0
+          run_install: false
 
       - name: Set up Node
         uses: actions/setup-node@v4
@@ -63,7 +69,9 @@ jobs:
             git worktree add --detach "$state_dir" "origin/$STATE_BRANCH"
             git -C "$state_dir" checkout -B "$STATE_BRANCH" "origin/$STATE_BRANCH"
           else
-            git worktree add -b "$STATE_BRANCH" "$state_dir"
+            git worktree add --detach "$state_dir" HEAD
+            git -C "$state_dir" switch --orphan "$STATE_BRANCH"
+            git -C "$state_dir" rm -rf --ignore-unmatch . 2>/dev/null || true
           fi
           mkdir -p "$state_dir/records"
           cp "$RUNNER_TEMP/continuation-cycle.json" "$state_dir/records/${GITHUB_RUN_NUMBER}.json"
