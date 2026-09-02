@@ -1,0 +1,33 @@
+{
+  "checks": [
+    {
+      "command": [
+        "pnpm",
+        "test",
+        "--",
+        "--maxWorkers=1",
+        "--minWorkers=1"
+      ],
+      "exit_code": 0,
+      "name": "unit_tests",
+      "output_tail": "> app-template@1.0.0 test /home/runner/work/ai-assistant/ai-assistant\n> vitest run \"--maxWorkers=1\" \"--minWorkers=1\"\n\n\n\u001b[1m\u001b[7m\u001b[36m RUN \u001b[39m\u001b[27m\u001b[22m \u001b[36mv2.1.9 \u001b[39m\u001b[90m/home/runner/work/ai-assistant/ai-assistant\u001b[39m\n\n \u001b[32m\u2713\u001b[39m tests/assistant-state.test.ts \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[90m 4\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m\u2713\u001b[39m tests/oauth-configuration.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[90m 3\u001b[2mms\u001b[22m\u001b[39m\n \u001b[2m\u001b[90m\u2193\u001b[39m\u001b[22m tests/auth.logout.test.ts \u001b[2m(\u001b[22m\u001b[2m1 test\u001b[22m\u001b[2m | \u001b[22m\u001b[33m1 skipped\u001b[39m\u001b[2m)\u001b[22m\n \u001b[32m\u2713\u001b[39m tests/connectors.contract.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[90m 3\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[2m | \u001b[22m\u001b[33m1 skipped\u001b[39m\u001b[90m (4)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m10 passed\u001b[39m\u001b[22m\u001b[2m | \u001b[22m\u001b[33m1 skipped\u001b[39m\u001b[90m (11)\u001b[39m\n\u001b[2m   Start at \u001b[22m 21:52:10\n\u001b[2m   Duration \u001b[22m 1.55s\u001b[2m (transform 174ms, setup 0ms, collect 756ms, tests 11ms, environment 1ms, prepare 243ms)\u001b[22m"
+    },
+    {
+      "command": [
+        "pnpm",
+        "check"
+      ],
+      "exit_code": 0,
+      "name": "typecheck",
+      "output_tail": "> app-template@1.0.0 check /home/runner/work/ai-assistant/ai-assistant\n> tsc --noEmit"
+    }
+  ],
+  "cycle": 137,
+  "cycle_limit": 2400,
+  "generated_at": "2026-09-02T21:52:18.509011+00:00",
+  "mutation_policy": "read_only_validation",
+  "next_action": "continue_on_next_schedule",
+  "schema_version": 1,
+  "source_sha": "f31e1817fecd9ecb3e7284738f38cf8c66ba3db9",
+  "status": "passed"
+}
